@@ -1,7 +1,15 @@
+using Hulujan_Iulia_Petruta_lab5M.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// adaugam HttpClient pentru serviciu
+builder.Services.AddHttpClient<IRiskPredictionService, RiskPredictionService>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:61535"); // pune aici portul tau
+});
 
 var app = builder.Build();
 

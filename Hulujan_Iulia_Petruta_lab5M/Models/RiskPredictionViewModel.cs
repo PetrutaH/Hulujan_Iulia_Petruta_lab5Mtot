@@ -5,6 +5,6 @@
         public string InspectionType { get; set; }
         public string ViolationDescription { get; set; }
         // rezultat întors de API
-        public string PredictedRisk { get; set; }
+        public string? PredictedRisk { get; set; }
     }
 }

@@ -35,17 +35,17 @@ public partial class ClassificationModel
     #region model output class
     public class ModelOutput
     {
-        [ColumnName(@"InspectionType")]
-        public float[] InspectionType { get; set; }
+        //[ColumnName(@"InspectionType")]
+        //public float[] InspectionType { get; set; }
 
-        [ColumnName(@"ViolationDescription")]
-        public float[] ViolationDescription { get; set; }
+        //[ColumnName(@"ViolationDescription")]
+        //public float[] ViolationDescription { get; set; }
 
-        [ColumnName(@"RiskCategory")]
-        public uint RiskCategory { get; set; }
+        //[ColumnName(@"RiskCategory")]
+        //public uint RiskCategory { get; set; }
 
-        [ColumnName(@"Features")]
-        public float[] Features { get; set; }
+        //[ColumnName(@"Features")]
+        //public float[] Features { get; set; }
 
         [ColumnName(@"PredictedLabel")]
         public string PredictedLabel { get; set; }
